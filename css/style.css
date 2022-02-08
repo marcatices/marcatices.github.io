@@ -279,12 +279,12 @@ img{
 	position: fixed;
 	right: 30px;
 	bottom: 10%;
-	background-image: url(../imgs/to-top-icon.svg);
+	background-image: url(../imgs/top.png);
 	background-size: cover;
 }
 .to-top:hover{
 	background: #f5f5f5;
-	background-image: url(../imgs/to-top-icon.svg);
+	background-image: url(../imgs/top.png);
 }
 .footer{
 	text-align: center;
@@ -335,8 +335,7 @@ img{
 .txt-main{
 	font-size: 1.2em;
 	line-height: 120%;
-	color: #666;
-	text-align: justify;
+	color: #666;	text-align: justify;
 }
 .module>.content>.col-md-6-my.intro{
 	text-align: left;
@@ -960,3 +959,8 @@ video::-internal-media-controls-download-button {
 	height: 4px;
 	background: transparent;
 }
+
+
+
+
+
