@@ -193,7 +193,7 @@ img{
 	overflow: hidden;
 	float: left;
 }
-.project-container-new{
+.project-container-new{ /* 1:1 */
 	width: 1000px;
 	height: 1000px;
 	background: white;
@@ -217,6 +217,18 @@ img{
 	
 	width: 1000px;
 	height:540px;
+	background: white;
+	/*margin: 0 20px 20px 10px;*/
+	transition: all .3s;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	
+}
+.project-container-a{ /* 2:3 */
+	
+	width: 1000px;
+	height:1500px;
 	background: white;
 	/*margin: 0 20px 20px 10px;*/
 	transition: all .3s;
