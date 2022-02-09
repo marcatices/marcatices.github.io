@@ -11,17 +11,32 @@ body {
 	-moz-osx-font-smoothing: antialiased;
 	/*letter-spacing: 1px;*/
 }
+
+/*粒子*/
+#particles-js{
+	position: fixed;
+	width:120%;
+	height:140%;
+	margin: auto;
+	display: flex;
+}
 body.home-body {
 	background: #393837;
+	flex-wrap: wrap;
+	margin:auto;
+	overflow: visible;
+	background-repeat: repeat;
 }
 a:hover,
 a:focus,
 a:active{
 	color: #337ab7;
 }
+
 img{
 	border:none;
 }
+
 .navbar-transparent{
 	background: transparent;
 	border: none;
@@ -202,10 +217,32 @@ img{
 	overflow: hidden;
 	float: left;
 }
+.project-container-x{
+	
+	width: 1000px;
+	height:540px;
+	background: white;
+	/*margin: 0 20px 20px 10px;*/
+	transition: all .3s;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	
+}
+
+
 .project-container:hover{
 	/*box-shadow: 0 2px 18px #ccc;*/
 	box-shadow: 0 1px 10px rgba(242, 72, 59, .4);
 	/*border:1px solid rgba(242, 72, 59, 1);*/
+	
+}
+.project-container--x:hover{
+	
+	box-shadow: 0 2px 18px #ccc;
+	/*box-shadow: 0 1px 10px rgba(242, 72, 59, .4);*/
+	/*border:1px solid rgba(242, 72, 59, 1);*/
+	transform: scale(1.2);
 }
 
 .pro-intro-container{
@@ -477,7 +514,7 @@ img{
 }
 .footer.ports{
 	/*margin-top: 20px;*/
-	padding: 12px;
+	padding: 20px;
 }
 .self-intro>.title{
 	font-size: 1.3em;
@@ -893,10 +930,10 @@ img{
 	display: flex;
 	display: -webkit-flex;
 	justify-content: center;
-	margin-top: 30px;
+	margin-top: 50px;
 }
 .self-intro-bo{
-	width: 580px;
+	width: 600px;
 }
 .photo-container{
 	width: 80px;
