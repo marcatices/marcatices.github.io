@@ -17,15 +17,11 @@ body {
 	position: fixed;
 	width:120%;
 	height:140%;
-	margin: auto;
-	display: flex;
+	
 }
 body.home-body {
 	background: #393837;
-	flex-wrap: wrap;
-	margin:auto;
-	overflow: visible;
-	background-repeat: repeat;
+	
 }
 a:hover,
 a:focus,
