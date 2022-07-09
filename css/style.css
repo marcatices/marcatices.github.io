@@ -226,6 +226,18 @@ img{
 	float: left;
 	
 }
+.project-container-D{/* 1080*1920 */
+	
+	width: 1000px;
+	height:1800px;
+	background: white;
+	/*margin: 0 20px 20px 10px;*/
+	transition: all .3s;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	
+}
 .project-container-a{ /* 2:3 */
 	
 	width: 1000px;
