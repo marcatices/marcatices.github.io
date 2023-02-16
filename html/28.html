@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Copatible" content="IE=edge">
+    <meta name="viewport"  content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+	<title>午后小房间</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	
+</head>
+<body class="home-body"> 
+	<div id="particles-js"></div>
+	<!-- <div class="nav_banner" style="background-image: url(imgs/banner.png);"> -->
+		<nav class="navbar navbar-default navbar-transparent">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar" ></span>
+						<span class="icon-bar" ></span>
+						<span class="icon-bar" ></span>
+					</button>
+					<a class="navbar-brand" href="../index.html"><div class="logo" style="background-image: url(../imgs/logo.jpg); background-position:center; 
+					 background-size: cover; border-radius: 50%;"></div>Marcatices</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				    <ul class="nav navbar-nav navbar-right">
+				        <li class="active"><a href="../index.html">主页</a></li>
+				        <li><a href="https://www.yuque.com/marcatices?tab=books">笔记</a></li>
+				        <!-- <li><a href="#">ABOUT</a></li> -->
+				    </ul>
+				</div>
+			</div>
+		</nav>
+	<!-- </div> -->
+
+	 
+    
+    
+    <div class="container-my">
+     <div class="self-container">
+        <div class="pro-container">
+        <div class="text-center" style="color: blanchedalmond;font-size: 30px;">午后小房间</div>
+        <div><p><br></p></div>
+		<div class="text-center" style="color: blanchedalmond;font-size: 30px;">#Blender</div>
+		<div><p><br></p></div>
+           
+        <div><p><br></p></div>
+        <div class="project-container-x" style="background-color:#ffad54; 
+        background-image: url(../imgs/30-1.png); background-size: cover; background-position: center;">
+          </div>
+		  
+        <div><p><br></p></div>
+        <div class="project-container-x" style="background-color:#ffad54; 
+        background-image: url(../imgs/30-2.png); background-size: cover; background-position: center;">
+          </div>
+		  
+     
+       </div>
+    </div>
+    
+	
+    
+    
+    
+    
+    <a href="#"><div class="to-top"></div></a>
+	<div class="self-container">
+		<div class="self-intro-bo">
+			<div class='photo-container'><img class='myphoto' src="../imgs/logo.jpg"></div>
+			<div class="intro-text">关于Marcartices。<br/>
+			<div class="link-my">
+				<a target="_blank" href="https://space.bilibili.com/128973506?spm_id_from=333.1007.0.0">BilBil</a>
+				<a target="_blank" href="https://www.zcool.com.cn/u/22116224">站酷</a>
+				<a target="_blank" href="https://youown.net/mycenter/e24ff84d2b654826a7dfa5fea7228b03">YOUOWN由我</a>
+				<a target="_blank" href="https://github.com/marcatices">Github</a>
+			<!-- 	<a target="_blank" href="file/baoling-cv-zh.pdf">Resume-ZH</a>
+				<a target="_blank" href="file/baoling-cv-en.pdf">Resume-EN</a> -->
+			</div>
+			</div>
+		</div>
+        
+	</div>
+
+
+	<div class="footer">
+		<!-- This website is designed and developed by Baoling Yang, all copyright reserved.<br/> -->
+		Copyright @Marcartices 2021
+	</div>
+</div>
+</div>
+</div>
+	<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/particles.js"></script>
+	<script type="text/javascript" src="../js/app.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() { 
+			$("#tagAll").click(function(){
+				$(".project-container").show();
+			});
+			$("#tagUX").click(function() {
+				$(".project-container").not(".UX").hide();
+				$(".UX").show();
+			});
+			$("#tagVisual").click(function() {
+				$(".project-container").not(".Visual").hide();
+				$(".Visual").show();
+			});
+			$("#tagVideo").click(function() {
+				$(".project-container").not(".Video").hide();
+				$(".Video").show();
+			});
+			$("#tag3d").click(function() {
+				$(".project-container").not(".3D").hide();
+				$(".frontend").show();
+			});
+			
+			$(".to-top").hide();
+			currTop = 0;
+			$(window).scroll(function(){
+				var windowTop = $(window).scrollTop()||0;
+				if (windowTop > 200){
+					$(".to-top").fadeIn(300);
+				}
+				else{
+					$(".to-top").fadeOut(300);
+				}
+				if(windowTop > currTop){
+					$(".navbar").addClass("navbar-hide");
+				}else{
+					$(".navbar").removeClass("navbar-hide")
+					if(windowTop > 20){
+						$(".navbar").addClass("navbar-custom");
+					}else{
+						$(".navbar").removeClass("navbar-custom");
+					}
+				}
+				currTop = windowTop;
+			});
+
+			$(".tag").click(function(){
+				$(this).siblings().removeClass("active");
+				$(this).addClass("active");
+			});
+		}); 
+	</script>
+
+</body>
+</html>
